@@ -1,7 +1,7 @@
 <?= $this->extend('layout/default') ?>
 
 <?= $this->section('content') ?>
-<div class="flex flex-col lg:flex-row-reverse space-y-16 lg:space-y-0 text-center lg:text-left container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+<div class="flex flex-col lg:flex-row-reverse space-y-16 lg:space-y-0 text-center lg:text-left container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 min-h-screen">
         <div class="lg:w-1/2 lg:flex lg:items-center">
           <div>
             <div class="font-semibold inline-flex px-2 py-1 leading-4 mb-2 text-lg rounded text-emerald-700 bg-emerald-200">

@@ -1,7 +1,7 @@
 <?= $this->extend('layout/default') ?>
 
 <?= $this->section('content') ?>
-<div class="bg-gray-100">
+<div class="bg-gray-100 min-h-screen">
   <div class="container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-15">
 
   <!-- Breadcrumb -->

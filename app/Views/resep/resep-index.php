@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 <div class="bg-gray-100" id="resep">
-      <div class="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+      <div class="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 min-h-screen">
         <!-- Heading -->
         <div class="text-center">
           <div class="text-sm uppercase font-bold tracking-wider mb-1 text-indigo-700">

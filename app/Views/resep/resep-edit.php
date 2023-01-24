@@ -24,7 +24,7 @@
   </ol>
 
 
-<div class="p-14 grid place-items-center">
+<div class="p-14 grid place-items-center min-h-screen">
 
 <?php if(session('errors')) {
  foreach(session('errors') as $key => $value) {
