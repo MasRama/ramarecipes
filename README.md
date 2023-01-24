@@ -1,62 +1,70 @@
-# CodeIgniter 4 Application Starter
 
-## What is CodeIgniter?
+![Logo](data:image/png;base64,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)
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+# Haloo! Selamat Datang 👋
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+# Rama Recipes
 
-## Installation & updates
+Project yang saya buat untuk memenuhi tugas UAS Pemrogaman Web Lanjut.
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+## Features
 
-## Setup
+- Full Auth (Login, Logout, dan Register)
+- Full CRUD (Create, Read, Update, Delete)
+- Auth Filtering
+- Upload Files Validation
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
 
-## Important Change with index.php
+## Requirement
+- Xampp or Laragon (for PHP and MySQL)
+- Composer
+## Deployment
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+Silahkan clone project ini dan ikuti tutorial dibawah :
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+```bash
+  composer install
+```
+Buat file .env (samakan dengan file env) atau ketik command ini.
 
-**Please** read the user guide for a better explanation of how CI4 works!
+ dan ubah konfigurasi database sesuai dengan laptop/pc anda.
+```bash
+  cp env .env
+```
+Buat database dengan nama yang sesuai pada konfigurasi .env (jika belum ada database nya.
 
-## Repository Management
+disini saya mencontohkan dengan nama ``` test_ci```)
+```bash
+  php spark db:create test_ci
+```
+Jalankan migrate database nya.
+```bash
+  php spark migrate
+```
+Jalankan seeder untuk data dummy database.
+```bash
+  php spark db:seed MakananSeed
+  php spark db:seed UserSeed
+```
+Default login seeder adalah :
+```bash
+  email : rama@gmail.com || password : rama
+```
+Terimakasih.
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
 
-## Server Requirements
 
-PHP version 7.4 or higher is required, with the following extensions installed:
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+## Author
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+- [@MasRama](https://github.com/MasRama/)
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
+## Support / Feedback
+
+Hubungi ryushineo@gmail.com untuk kebutuhan lebih lanjut.
+
